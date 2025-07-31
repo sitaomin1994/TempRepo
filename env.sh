@@ -31,9 +31,9 @@ pip install ipykernel
 python -m ipykernel install --user --name=py310 --display-name "python(py310)"
 jupyter kernelspec list
 
-conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2
+conda install pytorch==2.1.2 torchvision==0.16.2 torchaudio==2.1.2 pytorch-cuda=11.8 -c pytorch -c nvidia
 conda install lightning -c conda-forge
-conda install tensorflow
+conda install conda-forge::tensorflow-gpu
 conda install conda-forge::ctgan
 conda install -c conda-forge statsmodels seaborn scikit_learn wandb isolearn biopython pyyaml rdt easydict
 conda install conda-forge::scikit-learn
